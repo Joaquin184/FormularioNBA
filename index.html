@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario NBA</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Img/NBA.png">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Formulario de Encuesta</h1>
+          <p id="description" class="description text-center">
+            Jugadores y equipos de la NBA
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="nombre">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Edad<span class="clue">(opcional)</span></label
+            >
+            <input
+              type="number"
+              name="edad"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Edad"
+            />
+          </div>
+          <div class="form-group">
+            <p>¿Cual es tu posicion favorita de juego en el baloncesto?</p>
+            <select id="dropdown" name="Seleccione" class="form-control" required>
+              <option disabled selected value>Seleccione </option>
+              <option value="base">Base</option>
+              <option value="escolta">Escolta
+              </option>
+              <option value="alero">Alero</option>
+              <option value="Ala">Ala-Pivot</option>
+              <option value="pivot">Pivot</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>¿Que jugador sera el MVP este año?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="Nikola Jokic"
+                type="radio"
+                class="input-radio"
+                checked
+              />Nikola Jokic</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="Joel Embiid"
+                type="radio"
+                class="input-radio"
+              />Joel Embiid</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="Stephen Curry"
+                type="radio"
+                class="input-radio"
+              />Stephen Curry</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Cual fue el jugador con mas titulos de la NBA?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Seleccione</option>
+              <option value="Russell">Bill Russell</option>
+              <option value="Jones">Sam Jones</option>
+              <option value="Heinsohn">Tom Heinsohn</option>
+              <option value="Havlicek">John Havlicek</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              ¿Que equipo crees que llegaran a la final de la NBA? </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="Suns"
+                type="checkbox"
+                class="input-checkbox"
+              />Suns</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="Warrior"
+                type="checkbox"
+                class="input-checkbox"
+              />Warrior</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Grizzlies"
+                type="checkbox"
+                class="input-checkbox"
+              />Grizzlies</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Jazz"
+                type="checkbox"
+                class="input-checkbox"
+              />Jazz</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Mavericks"
+                type="checkbox"
+                class="input-checkbox"
+              />Mavericks</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Bulls"
+                type="checkbox"
+                class="input-checkbox"
+              />Bulls</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Heat"
+                type="checkbox"
+                class="input-checkbox"
+              />Heat</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Bucks"
+                type="checkbox"
+                class="input-checkbox"
+              />Bucks</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Lakers"
+                type="checkbox"
+                class="input-checkbox"
+              />Lakers</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Nets"
+                type="checkbox"
+                class="input-checkbox"
+              />Nets</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Nuggets"
+                type="checkbox"
+                class="input-checkbox"
+              />Nuggets</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Describe a tu jugador favorito de la NBA</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Escribe aqui..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="copy">
+      <p>Joaquin Iglesias😎</p>
+    </div>
+
+  <script src="scrip.js"></script>  
+</body>
+</html>
